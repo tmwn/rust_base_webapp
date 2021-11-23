@@ -8,6 +8,7 @@ pub struct ApplicationSettings {
 }
 
 pub fn get_configuration() -> Settings {
+    // Hint: use config crate to use different settings for dev and prod.
     Settings {
         application: ApplicationSettings {
             port: 8080,
